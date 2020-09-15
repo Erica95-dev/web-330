@@ -1,12 +1,10 @@
-<!-- /* 
+<!-- 
 Title: Perry-exercise 6.2.html
 Author: Erica Perry
 Date:9/14/2020
 Description:KO
-*/
 
-
-/*var header = require('../Erica-header.html');
+var header = require('../Erica-header.html');
 console.log(header.display("Erica", "Perry", "exercise 6.2.html"));
 console.log("\n") */-->
 
@@ -15,15 +13,20 @@ console.log("\n") */-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Exercise 6.2</title>
 
     <!--bootstraps link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+
+    
+
     <!--Knockout -->
 
     <script src="../knockout-3.5.1.js"></script>
+
 
 </head>
 <body>
@@ -32,36 +35,36 @@ console.log("\n") */-->
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
                   </li>
-            <li class="nav-item ">
+
+            <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
                    </li>
-            <li class="nav-item ">
+
+            <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
                 </li>
              </ul>
     </nav>
             
-    <div class="container" role="main"> 
+    <div role="main" class="container"> 
         <br/><br/>
 
         <h2>Person View Model</h2>
 
         <div class="form-group">
-            <label for="txtFirstName">First Name:
-            <input type="text" class="form-control alert-warning" data-bind="value: firstName" id="txtFirstName">
+            <label for="txtFirstName">First Name:</label>
+            <input type="text" class="form-control alert-warning"data-bind="value: firstName" id="txtFirstName"/>
         </div>
 
         <div class="form-group">
-            <label for="txtLastName">Last Name:
-            <input type="text" class="form-control alert-warning" data-bind="value: lasttName" id="txtLastName">
+            <label for="txtLastName">Last Name:</label>
+            <input type="text" class="form-control alert-warning"data-bind="value: lasttName" id="txtLastName"/>
         </div>
 
         <div class="form-group">
-            <label for="txtEmail">Email:
-            <input type="text" class="form-control alert-warning" data-bind="value: email" id="txtEmail">
-        </div>
+            <label for="txtEmail">Email:</label>
+            <input type="text" class="form-control alert-warning"data-bind="value: email" id="txtEmail"/>
 
-            </label>
         </div>
 
     </div>
@@ -73,6 +76,7 @@ function PersonViewModel() {
     this.email = ko.observable("EP@gmail.com");
 }
 ko.applyBindings(new PersonViewModel());
+
     </script>
 </body>
 <html>
